@@ -680,10 +680,17 @@
     left: 55%;
   }
   .glass__box{
-    /* display: none; */
     height: 315px;
     width: 180px;
-    /* background: red; */
+  }
+  .img__box__circle.second{
+    left: 0%;
+  }
+  .img__box__half_circle.second{
+    left: 0;
+  }
+  .glass__box.second{
+    left: 5%;
   }
   .card__title{
     text-align: center;
@@ -715,13 +722,10 @@
   }
   .footer__input{
    flex-direction: column; 
-   /* align-items: center; */
-   /* justify-content: center; */
   }
   .footer__email{
     width: 80%;
     border-radius: 10px 10px 0 0;
-    /* border-bottom: 0; */
     border-color: var(--blue);
   }
   .footer__btn{
