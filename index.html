@@ -12,14 +12,19 @@
   <div class="main">
     <div class="container">
       <div class="header">
-        <h1 class="logo">HelloUI</h1>
-        <ul class="menu">
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Tools</a></li>
-          <li><a href="#">Freatures</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Jobs</a></li>
-        </ul>
+
+        <div class="block__header">
+          <h1 class="logo">HelloUI<img src="./img/bars-solid.svg" class="burger__menu" onclick="slideMenu()"></h1>
+          
+          <ul class="menu">
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Freatures</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+
         <div class="sign">
           <a href="#" class="sign__in">Sign In</a>
           <a href="#" class="btn">Try for Free</a>
@@ -408,5 +413,6 @@
         </div>
   </div>
   <script src="https://kit.fontawesome.com/2b51017277.js" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

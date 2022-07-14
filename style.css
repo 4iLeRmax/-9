@@ -23,23 +23,30 @@
   padding: 0 10%;
 }
 .header{
+  position: relative;
   font-family: var(--i);
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 30px 0;
-
+}
+.block__header{
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .logo{
   font-family: var(--r);
   color: var(--black);
   font-size: 36px;
   font-weight: 500;
+  margin-right: 150px;
 }
 .menu{
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 .menu li {
   padding: 0 30px;
@@ -73,6 +80,13 @@
   padding: 12px 30px;
   border-radius: 30px;
 }
+.burger__menu{
+  display: none;
+  width: 20px;
+  z-index: 2;
+  cursor: pointer;
+
+}
 .header__info{
   font-family: var(--i);
   margin-top: 100px;
@@ -100,11 +114,23 @@
 }
 .header__info_buttons .btn{
   margin: 0 10px;
+  transition: all .3s ease;
+}
+.header__info_buttons .btn:hover{
+  background: #fff;
+  box-shadow: 0px 10px 40px rgba(176, 201, 253, 0.3);
+  color: var(--blue);
 }
 .header__info_buttons .btn:nth-child(2){
   background: #fff;
   color: var(--blue);
   box-shadow: 0px 10px 40px rgba(176, 201, 253, 0.3);
+  transition: all .3s ease;
+}
+.header__info_buttons .btn:nth-child(2):hover{
+  color: #fff;
+  background-color: var(--blue);
+  box-shadow: 0;
 }
 .main_content_1{
   display: flex;
@@ -183,6 +209,9 @@
   justify-content: center;
   align-items: center;
   width: 250px;
+}
+.content__btn:hover{
+  background-color: rgba(17, 43, 100, 0.1);
 }
 .content__circle{
   position: relative;
@@ -543,10 +572,49 @@
   }
   .logo{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .burger__menu{
+    display: flex;
   }
   .menu{
-    background: red;
-    display: none;
+    padding: 40px 10px;
+    flex-direction: column;
+  }
+  .menu.active{
+    display: block;
+  }
+  .menu li{
+    padding: 5px 0;
+  }
+  .menu li a{
+    display: flex;
+    width: 60%;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: background color all .3s ease;
+  }
+  .menu li a:focus{
+    background-color: var(--blue);
+    color: #fff;
+  }
+  .block__header{
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    transition: height .3s ease;
+    width: 100%;
+  }
+  .block__header.active{
+    height: 420px;
+  }
+  .sign{
+    padding: 20px 0;
   }
   .header__info_title{
     font-size: 50px;
@@ -597,7 +665,7 @@
   }
   .img__box__half_circle{
     top: 50%;
-    left: 60%;
+    left: 55%;
   }
   .glass__box{
     /* display: none; */
