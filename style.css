@@ -567,7 +567,10 @@
     padding: 0;
   }
   .header{
-    padding: 30px 10%;
+    /* padding: 30px 10%; */
+
+    padding: 0;
+
     flex-direction: column;
   }
   .logo{
@@ -577,6 +580,9 @@
     align-items: center;
     width: 100%;
     text-align: center;
+
+    padding: 15px 10%;
+
   }
   .burger__menu{
     display: flex;
@@ -593,7 +599,7 @@
   }
   .menu li a{
     display: flex;
-    width: 60%;
+    width: 100%;
     font-size: 30px;
     padding: 5px;
     border-radius: 8px;
@@ -604,14 +610,20 @@
     color: #fff;
   }
   .block__header{
+    background-color: #fff;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 2;
     display: block;
     overflow: hidden;
-    height: 50px;
+    height: 80px;
     transition: height .3s ease;
     width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #999;
   }
   .block__header.active{
-    height: 420px;
+    height: 450px;
   }
   .sign{
     padding: 20px 0;
