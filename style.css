@@ -371,7 +371,7 @@
   margin-top: 10px;
 }
 .twiiter__title{
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--darkBlue);
   margin-right: 5px;
@@ -379,7 +379,7 @@
 }
 .twitter__name{
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--grey);
 }
@@ -387,7 +387,7 @@
   text-align: left;
 }
 .twitt__text{
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 24px;
   color: var(--darkBlue);
@@ -761,15 +761,17 @@
     height: 2500px;
   }
   .active__btn{
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    position: relative;
+    left: 40%;
     border: 0;
     outline: 0;
     background-color: transparent;
-    margin: 20px 0;
+    margin: 40px 0 0;
     padding: 3px 0;
     border-bottom: 1px solid var(--blue);
     color: var(--blue);
+    transition: all .3s ease;
   }
   .active__btn:hover{
     color: #999;
