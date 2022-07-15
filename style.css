@@ -512,7 +512,7 @@
 }
 .footer__menu__info__social__media i{
   color: #c4c4c4;
-  width: 15px;
+  width: 25px;
   cursor: pointer;
   margin-right: 15px;
   transition: all .3s ease;
@@ -707,12 +707,18 @@
     margin: 0 auto;
     max-width: 220px;
   }
+  .comments{
+    padding: 150px 5%;
+  }
   .comments__title{
     font-size: 35px;
     line-height: 40px;
   }
   .comments__twitter{
     grid-template-columns: 1fr;
+  }
+  .twit{
+    margin: 0 auto;
   }
   .ellipse3{
     display: none;
@@ -763,7 +769,7 @@
   .active__btn{
     display: inline-block;
     position: relative;
-    left: 40%;
+    left: 35%;
     border: 0;
     outline: 0;
     background-color: transparent;
