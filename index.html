@@ -58,10 +58,9 @@
     <div class="container">
       <div class="brands">
         <p class="brands__info">More than 1.8 million people across 50,000 companies choose Spellon</p>
-
-        <div class="brands__slider">
-          <div class="brands_slide_1">
-            <div class="brands__logo">
+        <div class="brands__tabs">
+          <div class="brands__tabs_content">
+            <div class="tabs_item active" id="tab_1">
               <img src="./img/brand - 1.svg">
               <img src="./img/brand - 2.svg">
               <img src="./img/brand - 3.svg">
@@ -69,11 +68,27 @@
               <img src="./img/brand - 5.svg">
               <img src="./img/brand - 6.svg">
             </div>
+            <div class="tabs_item" id="tab_2">
+              <img src="./img/brand - 6.svg">
+              <img src="./img/brand - 5.svg">
+              <img src="./img/brand - 4.svg">
+              <img src="./img/brand - 3.svg">
+              <img src="./img/brand - 2.svg">
+              <img src="./img/brand - 1.svg">
+            </div>
+            <div class="tabs_item" id="tab_3">
+              <img src="./img/brand - 2.svg">
+              <img src="./img/brand - 1.svg">
+              <img src="./img/brand - 4.svg">
+              <img src="./img/brand - 3.svg">
+              <img src="./img/brand - 6.svg">
+              <img src="./img/brand - 5.svg">
+            </div>
           </div>
           <div class="brands__manual_btn">
-            <div class="manual_btn"></div>
-            <div class="manual_btn"></div>
-            <div class="manual_btn"></div>
+            <button class="tabs_nav_btn active" type="button" data-tab="#tab_1"></button>
+            <button class="tabs_nav_btn" type="button" data-tab="#tab_2"></button>
+            <button class="tabs_nav_btn" type="button" data-tab="#tab_3"></button>
           </div>
         </div>
 
