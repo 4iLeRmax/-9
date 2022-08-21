@@ -2,6 +2,9 @@ let menu = document.querySelector('.block__header');
 function slideMenu(){
   menu.classList.toggle('active');
 }
+window.addEventListener('scroll', ()=> {
+  menu.classList.remove('active');
+})
 
 let comments = document.querySelector('.comments__twitter');
 function openComment(){
